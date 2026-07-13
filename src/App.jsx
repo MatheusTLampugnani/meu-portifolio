@@ -57,7 +57,6 @@ const Linkedin = ({ className }) => (
   </svg>
 );
 
-
 const meusProjetos = [
   {
     id: 1,
@@ -265,7 +264,6 @@ function App() {
       setFormLoading(false);
     }
   };
-
 
   const filteredProjects = meusProjetos.filter(proj => {
     if (activeFilter === "Todos") return true;
@@ -720,7 +718,7 @@ function App() {
                   </div>
                   <h5 className="text-lg font-bold text-slate-950 dark:text-white">Mensagem Enviada!</h5>
                   <p className="text-slate-500 dark:text-slate-400 text-sm max-w-xs">
-                    Obrigado pelo seu contato, responderei o mais breve possível.
+                    Obrigado pelo seu contato, Matheus responderá o mais breve possível.
                   </p>
                 </div>
               ) : (
