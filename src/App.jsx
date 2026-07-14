@@ -144,7 +144,7 @@ const habilidades = [
   {
     categoria: "Backend",
     icon: <Cpu className="w-6 h-6 text-purple-500" />,
-    skills: ["Node.js", "Express.js", "Python", "Django", "APIs RESTful", "Arquitetura MVC"]
+    skills: ["Node.js", "Express.js", "PHP", "Python", "Django", "APIs RESTful", "Arquitetura MVC"]
   },
   {
     categoria: "Bancos de Dados",
@@ -437,7 +437,7 @@ function App() {
             </div>
 
             {/* Estatísticas / Detalhes */}
-            <div className="lg:col-span-5 grid grid-cols-2 gap-4">
+            <div className="lg:col-span-5 grid grid-colfs-2 gap-4">
               <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-6 rounded-3xl text-center space-y-2 shadow-sm transition-theme hover:-translate-y-1 hover:shadow-md">
                 <span className="text-4xl font-extrabold text-indigo-600 dark:text-indigo-400">3+</span>
                 <p className="text-xs text-slate-500 dark:text-slate-400 font-bold uppercase tracking-wider">Anos de Código</p>
@@ -593,46 +593,6 @@ function App() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* CARREIRA SECTION */}
-      <section id="carreira" className="max-w-6xl mx-auto px-6 py-24">
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-20">
-          <h2 className="text-xs uppercase font-extrabold tracking-widest text-indigo-600 dark:text-indigo-400">Carreira</h2>
-          <p className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">Linha do Tempo Profissional</p>
-          <div className="w-12 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full"></div>
-        </div>
-
-        {/* Timeline Layout */}
-        <div className="relative border-l border-slate-200 dark:border-slate-800 max-w-3xl mx-auto pl-8 sm:pl-10 space-y-12">
-          {timeline.map((item) => (
-            <div key={item.id} className="relative group">
-              {/* Timeline dot */}
-              <span className={`absolute -left-[45px] sm:-left-[49px] top-1.5 flex items-center justify-between w-9 h-9 sm:w-10 sm:h-10 rounded-full border-4 border-slate-50 dark:border-slate-950 shadow-md ${item.tipo === 'trabalho' ? 'bg-indigo-600' : 'bg-purple-600'
-                }`}>
-                <div className="flex items-center justify-center w-full h-full">
-                  {item.icon}
-                </div>
-              </span>
-
-              {/* Box */}
-              <div className="bg-white dark:bg-slate-900/60 border border-slate-100 dark:border-slate-800/80 p-6 sm:p-8 rounded-3xl shadow-sm hover:shadow-lg transition-theme relative">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
-                  <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">{item.titulo}</h3>
-                    <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-semibold">{item.subtitulo}</p>
-                  </div>
-                  <span className="inline-block text-xs font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200/20 px-3.5 py-1.5 rounded-full w-fit">
-                    {item.periodo}
-                  </span>
-                </div>
-                <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
-                  {item.descricao}
-                </p>
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 
